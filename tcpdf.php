@@ -13726,7 +13726,6 @@ class TCPDF {
 						'Content-Type: application/timestamp-query',
 						'User-Agent: TCPDF'
 				curl_setopt($ch, CURLOPT_POSTFIELDS, $raw_data);
-
 				$tsResponse = curl_exec($ch);
 				if($tsResponse != false) {
 					$tsaLog .= __FILE__." line:(".__LINE__."). tsRequest is sent.\n";
